@@ -47,8 +47,9 @@ export default {
             }
         },
         all: function () {
-            axios.get('http://127.0.0.1:8000/api/estudiantes/')
+            axios.get('http://127.0.0.1:8030/api/estudiantes/')
                 .then( response => {
+                    console.log(response.data)
                     this.estudiantes = response.data
                 });
         }
